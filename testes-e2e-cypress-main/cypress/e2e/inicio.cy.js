@@ -46,7 +46,7 @@ describe('Página Principal', () => {
   })
   it('Parágrafo escrito corretamente!', () => {
     cy.visit('http://localhost:3000')
-    cy.getByData('paragrafo4').contains('Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
+    cy.Identificar('paragrafo4').contains('Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
   })
 })
 
@@ -58,3 +58,14 @@ describe('Página Principal', () => {
     cy.getByData('imagem').should("be.visible")
   })
 })
+
+describe('Página Principal 2', () => {
+  beforeEach( () => {
+    cy.visit('http://localhost:3000/')
+  })
+  it('Parágrafo escrito corretamente!', () => {
+    cy.visit('http://localhost:3000')
+    cy.Identificar('paragrafo4').contains('Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
+  })
+})
+

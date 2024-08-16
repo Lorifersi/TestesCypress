@@ -22,12 +22,12 @@ export default function Inicio() {
             />
           </div>
           <div className={estilos.vantagens}>
-            <h2>Vantagens do nosso banco:</h2>
+            <h2 data-test="sub-titulo">Vantagens do nosso banco:</h2>
             <div className={estilos.vantagens__itens}>
               <div className={estilos.vantagens__item}>
                 <img src={presente} alt="ícone de um presente" />
                 <h3>Conta e cartão gratuitos</h3>
-                <p>
+                <p data-test="paragrafo">
                   Isso mesmo, nossa conta é digital, sem custo fixo e mais que
                   isso: sem tarifa de manutenção.
                 </p>

@@ -13,6 +13,8 @@ describe('Testando dispositivos móveis', () => {
         cy.getByData('menu-lateral').find('a').eq(3).click()			
 
         cy.location('pathname').should('eq','/home/investimentos')
+        cy.viewport(550, 750) /* Configura o tamanho da janela para 550px x 750px */
+		cy.viewport('iphone-6') /* Configura o tamanho da janela para 375px x 667px */
         			
     })
 })
